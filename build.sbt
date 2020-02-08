@@ -75,6 +75,7 @@ val ZioVersion = "1.0.0-RC17"
 val ZioCatsVersion = "2.0.0.0-RC10"
 val ZioMacroVersion = "0.6.0"
 val DoobieVersion = "0.8.6"
+val QuillVersion = "3.5.0"
 
 libraryDependencies ++= Seq(
   /* ZIO */
@@ -85,6 +86,9 @@ libraryDependencies ++= Seq(
 
   /* Doobie */
   "org.tpolecat" %% "doobie-core" % DoobieVersion % "optional",
+
+  /* Quill */
+  "io.getquill" %% "quill-jdbc" % QuillVersion,
 
   /* ZIO test */
   "dev.zio" %% "zio-test" % ZioVersion % "test",
